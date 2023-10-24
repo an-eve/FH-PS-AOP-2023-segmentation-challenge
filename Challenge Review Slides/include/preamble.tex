@@ -1,0 +1,125 @@
+% !TEX root = main.tex
+\documentclass[10pt]{beamer}
+\usetheme{Boadilla}
+\usefonttheme{default}
+\usecolortheme{beaver}
+
+
+% Mathematical symbols
+\usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % for formatting and enhancing mathematical notation and equations
+
+
+% Images
+\usepackage{graphicx} % for working with images
+\graphicspath{{image/}}
+\usepackage{tikz} % for creating graphics and diagrams directly 
+\usetikzlibrary{calc}
+\usepackage{floatrow} % provides additional control over figure and table placement, 
+                      % including the [H] option for precise figure placement
+\usepackage[margin=10pt,font=small,labelfont=bf,labelsep=period]{caption} % to configure 
+                                    % the appearance of captions for figures and tables
+%\usepackage{lipsum} % for generating placeholder text
+
+
+% Tables
+\usepackage{array} % for creating arrays and matrices within mathematical environments
+\usepackage{tabularx} %  provides an environment for creating tables with columns of 
+                      %  varying widths that automatically adjust to fit the content
+\usepackage{tabulary} %  similar to the previous one
+\usepackage{booktabs} %  enhancing readability and aesthetics
+\usepackage{longtable} %  for creating tables that can span multiple page
+
+
+\usepackage{hyperref} % for adding links and customizing them
+\hypersetup{
+	colorlinks=true,        % false: boxed links; true: colored links
+	linkcolor=black,        % Color of internal links (e.g., table of contents)
+	citecolor=refcolor,     % Color of citation links
+	urlcolor=refcolor       % color of external links
+}
+
+\usepackage{biblatex} % bibliography-management package
+
+
+%Custom colors
+\definecolor{titlecolor}{RGB}{208,0,5}
+\definecolor{refcolor}{RGB}{164,16,26} 
+\definecolor{itemcolor}{RGB}{164,16,26}
+
+\definecolor{foot1}{RGB}{240,166,166}
+\setbeamercolor{color1}{fg=black,bg=foot1}
+
+\definecolor{foot2}{RGB}{246,211,211}
+\setbeamercolor{color2}{fg=black,bg=foot2}
+
+\definecolor{foot3}{RGB}{240,223,223}
+\setbeamercolor{color3}{fg=black,bg=foot3}
+
+\definecolor{foot4}{RGB}{230,230,230}
+\setbeamercolor{color4}{fg=black,bg=foot4}
+
+%\definecolor{alertcolor}{RGB}{255,0,0} % Red for alerts
+%\definecolor{boxcolor}{RGB}{0,128,0}  % Green for boxes
+%\definecolor{examplecolor}{RGB}{0,0,255}  % Blue for example boxes
+
+
+%Change colors
+\setbeamercolor{titlelike}{parent=palette primary,fg=titlecolor}
+\setbeamercolor{item}{fg=itemcolor}
+
+%\setbeamercolor{alerted text}{fg=alertcolor}
+
+%\setbeamercolor{block title}{bg=boxcolor, fg=white}
+%\setbeamercolor{block body}{bg=white, fg=black}
+
+%\setbeamercolor{block title example}{bg=examplecolor, fg=white}
+%\setbeamercolor{block body example}{bg=white, fg=black}
+
+%\setbeamercolor{block title alerted}{bg=alertcolor, fg=white} %
+%\setbeamercolor{block body alerted}{bg=white, fg=black} 
+
+
+%Footline
+\setbeamertemplate{footline}{
+\begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,left]{color1}%
+	\begin{beamercolorbox}[wd=0.3\paperwidth,ht=2.25ex,dp=1ex,center]{color1}%
+		\insertshorttitle
+	\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.3\paperwidth,ht=2.25ex,dp=1ex,center]{color2}%
+		\hspace*{5ex} \insertshortauthor
+	\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.3\paperwidth,ht=2.25ex,dp=1ex,center]{color3}%
+		\hspace*{5ex} \insertshortdate
+	\end{beamercolorbox}%
+	\begin{beamercolorbox}[wd=0.1\paperwidth,ht=2.25ex,dp=1ex,center]{color4}%
+		\hspace*{1ex} \insertframenumber{} / \inserttotalframenumber
+	\end{beamercolorbox}%
+\end{beamercolorbox}%
+} 
+
+
+% Define the \box and \myboxmath commands with the custom color
+\usepackage{tcolorbox} 
+\newtcbox{\mybox}{on line,colback=white,colframe=refcolor,size=fbox,arc=3pt,boxrule=0.8pt}
+\newcommand{\myboxmath}[1]{\mybox{$#1$}}
+
+
+%The next block of commands puts the table of contents at the 
+%beginning of each section and highlights the current section:
+%\AtBeginSection[]
+%{
+%  \begin{frame}
+%    \frametitle{Table of Contents}
+%    \tableofcontents[currentsection]
+%  \end{frame}
+%}
+
+% Remove the navigation bar from slides
+\beamertemplatenavigationsymbolsempty 
+
+% Enable numbering of figures and tables in captions
+\setbeamertemplate{caption}[numbered]
+
+% Adjust captions
+\usepackage{caption}
+\captionsetup[figure]{font=small,skip=0pt}
