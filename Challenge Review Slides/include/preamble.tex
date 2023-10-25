@@ -1,9 +1,11 @@
 % !TEX root = main.tex
+% Pass the [table] option to the xcolor package to enable table coloring
+\PassOptionsToPackage{table}{xcolor}
+
 \documentclass[10pt]{beamer}
 \usetheme{Boadilla}
 \usefonttheme{default}
 \usecolortheme{beaver}
-
 
 % Mathematical symbols
 \usepackage{amsmath,amsfonts,amssymb,amsthm,mathtools} % for formatting and enhancing mathematical notation and equations
@@ -28,7 +30,8 @@
 \usepackage{tabulary} %  similar to the previous one
 \usepackage{booktabs} %  enhancing readability and aesthetics
 \usepackage{longtable} %  for creating tables that can span multiple page
-
+% Include the xcolor package with the [table] option to enable coloring of tables
+\usepackage[table]{xcolor}
 
 \usepackage{hyperref} % for adding links and customizing them
 \hypersetup{
@@ -104,15 +107,15 @@
 \newcommand{\myboxmath}[1]{\mybox{$#1$}}
 
 
-%The next block of commands puts the table of contents at the 
-%beginning of each section and highlights the current section:
-%\AtBeginSection[]
-%{
-%  \begin{frame}
-%    \frametitle{Table of Contents}
-%    \tableofcontents[currentsection]
-%  \end{frame}
-%}
+% The next block of commands puts the table of contents at the 
+% beginning of each section and highlights the current section:
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
 
 % Remove the navigation bar from slides
 \beamertemplatenavigationsymbolsempty 
@@ -123,3 +126,4 @@
 % Adjust captions
 \usepackage{caption}
 \captionsetup[figure]{font=small,skip=0pt}
+
