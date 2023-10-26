@@ -17,12 +17,4 @@ Provide a benchmark dataset for evaluating and comparing new methods in FH-PS se
 
 Encourage the development of innovative approaches for estimating the AOP, which plays a key role in determining the optimal station for interventions like forceps or ventouse.
 
-Participants are given access to Set 1, which contains 401 images, and are required to submit their algorithms in Docker containers for evaluation on Set 2, a private test set, to prevent algorithm tuning. This challenge follows guidelines for transparent competition reporting in biomedical image analysis. It ultimately aims to enhance the clinical precision of fetal head station assessment and promote advancements in obstetric care.t
-
-
-To get started with this project, follow these steps:
-
-1. Clone the repository to your local machine:
-
-```bash
-git clone https://github.com/your-username/my-awesome-project.git
+Participants are given access to Set 1, which contains 401 images, and are required to submit their algorithms in Docker containers for evaluation on Set 2, a private test set, to prevent algorithm tuning. This challenge follows guidelines for transparent competition reporting in biomedical image analysis. It ultimately aims to enhance the clinical precision of fetal head station assessment and promote advancements in obstetric care.
