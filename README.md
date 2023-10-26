@@ -1,27 +1,26 @@
-# dl-medical-image-analysis
+# Deep Learning for Medical Image Analysis
 
-https://ps-fh-aop-2023.grand-challenge.org/
+## Folder Structure
 
-# My Awesome Project
-
-Welcome to My Awesome Project! This repository contains various folders and files that make up this project. Please refer to this README for an overview of the repository's structure and how to get started.
-
-## Table of Contents
-
-1. [Folder Structure](#folder-structure)
+1. [Challenge Review Slides](#challenge-review-slides)
 2. [Getting Started](#getting-started)
 3. [Contributing](#contributing)
 4. [License](#license)
 
-## Folder Structure
+## Challenge Review Slides
 
-This project is organized as follows:
+[Challenge](https://ps-fh-aop-2023.grand-challenge.org/)
 
-- `src/`: This folder contains the source code for the project.
-- `docs/`: Documentation and user guides can be found here.
-- `data/`: Data files used by the project are stored in this folder.
-- `scripts/`: Useful scripts to automate certain tasks.
-- `tests/`: Unit tests and test data for the project.
+The FH-PS-AOP Challenge is focused on advancing obstetric practice by automating the segmentation of fetal head and pubic symphysis (FH-PS) from transperineal ultrasound images. This segmentation is crucial for objectively assessing the level of fetal head descent in the birth canal, as measured by the angle of progression (AOP). The challenge aims to:
+
+Develop and apply cutting-edge techniques for automating FH-PS segmentation from ultrasound images.
+
+Provide a benchmark dataset for evaluating and comparing new methods in FH-PS segmentation.
+
+Encourage the development of innovative approaches for estimating the AOP, which plays a key role in determining the optimal station for interventions like forceps or ventouse.
+
+Participants are given access to Set 1, which contains 401 images, and are required to submit their algorithms in Docker containers for evaluation on Set 2, a private test set, to prevent algorithm tuning. This challenge follows guidelines for transparent competition reporting in biomedical image analysis. It ultimately aims to enhance the clinical precision of fetal head station assessment and promote advancements in obstetric care.t
+
 
 ## Getting Started
 
