@@ -3,9 +3,7 @@
 ## Folder Structure
 
 1. [Challenge Review Slides](#challenge-review-slides)
-2. [Getting Started](#getting-started)
-3. [Contributing](#contributing)
-4. [License](#license)
+2. 
 
 ## Challenge Review Slides
 
@@ -21,8 +19,6 @@ Encourage the development of innovative approaches for estimating the AOP, which
 
 Participants are given access to Set 1, which contains 401 images, and are required to submit their algorithms in Docker containers for evaluation on Set 2, a private test set, to prevent algorithm tuning. This challenge follows guidelines for transparent competition reporting in biomedical image analysis. It ultimately aims to enhance the clinical precision of fetal head station assessment and promote advancements in obstetric care.t
 
-
-## Getting Started
 
 To get started with this project, follow these steps:
 
