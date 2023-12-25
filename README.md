@@ -1,1 +1,2 @@
-To complete: to experiment with ViT
+## Next updates 
+Implement from scratch a ViT model,  experiment with existing ones
