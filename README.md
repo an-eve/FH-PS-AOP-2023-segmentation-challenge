@@ -43,7 +43,7 @@ The label pixels are categorized as follows:
 
 The implementation details are in the file `aop_estimation.py`. 
 
-![Segmentation result](images/angle_estimation.png)
+![Angle](images/angle_estimation.png)
 
 ## Next updates 
 Implement from scratch a ViT model, experiment with existing ones
